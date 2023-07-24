@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title" class="text-center"> CodeWar Survey Form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+
+<form id="survey-form">
+
+<div class="form-group">
+<label id="name-label" for="name"> Name </label>
+<input type="text" id="name" name="name" type="email" id ="email" placeholder="Enter Your Name" required> 
+</div>
+
+<div class="form-group">
+<label id="email-label" for="email"> Email </label>
+<input type="email" id="email" type="email" placeholder="Enter Your Email" required>
+</div>
+
+<div class="form-group" >
+<label id="number-label" for="number">Age</label>
+<input type="number" id="number" name="age" placeholder="Age" min="10" max="99">
+</div>
+
+<div class="form-group">
+    <p> Which option best describes your current role? </p>
+ <select id="dropdown" name="role" class="form-control" required>
+     <option disabled selected value>Select Current Role </option>
+     <option value="student">Student</option> 
+     <option value="job">Full Time Job</option> 
+     <option value="Developer">Fronend Developer</option> 
+     <option value="Developerr">Backend Developer</option> 
+     <option value="other">other</option> 
+       </select>
+     </div>
+    
+    <div class="form-group">
+        <p> Would you recommend CodeWar to a friend? </p>
+        <label>
+            <input name="user-recomend" value="definitely" type="radio" class="input-radio"> Definitely
+            </label>
+
+            <label>
+            <input name="user-recomend" value="definitely" type="radio" class="input-radio"> May be
+            </label>
+
+            <label>
+            <input name="user-recomend" value="definitely" type="radio" class="input-radio"> Not Sure
+            </label> 
+            </div>
+
+<div class="form-group">
+    
+    <p>What would you like to see improved? </p>
+  <label>
+    <input name="prefer" value="front-End project" type="checkbox" class="input-checkbox">Frondend Project
+</label>
+
+<label>
+    <input name="prefer" value="back-End project" type="checkbox" class="input-checkbox">Backend Project
+</label>
+
+<label>
+    <input name="prefer" value="fullstack project" type="checkbox" class="input-checkbox">Full Stack Project
+</label>
+    </div>
+
+<div class="form-group">
+    <p>Any Comments or Suugestions ? </p>
+    <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your commments here...."> </textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+
+
+</form>
+</body>
+</html>
